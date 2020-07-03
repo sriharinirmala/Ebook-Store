@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Login</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+<body>
+   <div class="loginbox" style="padding:10px;height:500px;">
+   <form  name="form" action="savebook.php"  onsubmit="return validate()" method="post">
+   <p>Name</p>
+   <input type="text" name="name" placeholder="Enter Username" style="height:20px;">
+   <p>Mobile no</p>
+   <input type="number" name="mobile_no" placeholder="Enter mobile no" style="height:20px;">
+   <p>Selling Price</p>
+   <input type="text" name="price" placeholder="Enter Selling Price" style="height:20px;">
+   <p>Book Name</p>
+   <input type="text" name="book_name" placeholder="Enter Book Name" style="height:20px;">
+   <p>Author</p>
+   <input type="text" name="author" placeholder="Enter Author" style="height:20px;">
+   <p>Department</p>
+   <select style="height:20px;"name="dept">
+  <option value="Computer Science">Computer Science</option>
+  <option value="Electrical and Electronics">Electrical and Electronics</option>
+  <option value="Mechanical">Mechanical</option>
+  <option value="Information technology">Information technology</option>
+  <option value="Civil">Civil</option>
+  <option value="Chemical">Chemical</option>
+  <option value="Aeronautical">Aeronautical</option>
+  <option value="MBA">MBA</option>
+  <option value="MCA">MCA</option>
+</select><br>
+<p>Email</p>
+   <input type="text" name="email_id" placeholder="Enter email-id" style="height:20px;">
+	<p>Image</p>
+	 <input type="file" name="fileToUpload" id="fileToUpload" style="height:20px;">
+   <input type="submit" name="submit" value="sell" accept="images/*">
+   </form>
+   </div>
+   <script>
+	  function validate()
+	  {
+	  
+	  var x=document.forms["form"]["name"].value;
+	  var y=document.forms["form"]["mobile_no"].value;
+	  var z=document.forms["form"]["price"].value;
+	  var a=document.forms["form"]["book_name"].value;
+	  var b=document.forms["form"]["author"].value;
+	  var c=document.forms["form"]["email_id"].value;
+	  if(x=="")
+	  {
+	  alert("Enter the username");
+	  return false;
+	  }
+	  if(y=="")
+	  {
+	  alert("enter the mobile no");
+	  return false;
+	  }
+	   if(z=="")
+	  {
+	  alert("enter the price");
+	  return false;
+	  }
+	   if(a=="")
+	  {
+	  alert("enter the book name");
+	  return false;
+	  }
+	   if(b=="")
+	  {
+	  alert("enter the author");
+	  return false;
+	  }
+	   if(c=="")
+	  {
+	  alert("enter the mailid");
+	  return false;
+	  }
+	  }
+	  </script>
+</body>
+
+</html>

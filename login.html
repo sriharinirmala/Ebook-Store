@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<title>Login</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+<body>
+   <div class="loginbox">
+   <img  src="log.png" class="log">
+   <h1>Login</h1>
+   <form action="checklogin.php" name="signup" method="post">
+   <p>Username</p>
+   <input type="text" name="name" placeholder="Enter Username">
+   <p>Password</p>
+   <input type="Password" name="password" placeholder="Enter password">
+   <input type="submit">
+   <a href="signup.html">Don't have an account?</a>
+   </form>
+   </div>
+   	  <script>
+	  function validate()
+	  {
+	  var x=document.forms["signup"]["name"].value;
+	  var y=document.forms["signup"]["password"].value;
+	  if(x=="")
+	  {
+	  alert("Enter the username");
+	  }
+	  if(y=="")
+	  {
+	  alert("enter the password");
+	  }
+	  }
+	  <script>
+</body>
+
+</html>

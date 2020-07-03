@@ -1,0 +1,83 @@
+body
+{
+	
+	margin: 0;
+	padding: 0;
+	 background-image: url("vv.jpg");
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family : sans-serif;
+	
+}
+.signin{
+	width: 320px;
+	height: 580px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.log{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.signin p{
+	margin: 0;
+	padding:0;
+	font-weight: bold;
+}
+
+.signin input{
+	width: 100%;
+	margin-bottom: 20px;
+	height: 20px;
+}
+
+.signin input[type="text"], input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	backgroound: transparent;
+	outline: none;
+	height: 20px;
+	color:black;
+	font-size:16px;
+}
+.signin input[type="submit"]
+{
+	border: none;
+	 outline:none;
+	 height: 20px;
+	 background: #fb2525;
+	 color:#fff;
+	 font-size: 18px;
+	 border-radius:20px;
+}
+.signin input[type="submit"]:hover
+{
+	cursor:pointer;
+	background: #ffc107;
+	color: #8b0000;
+}
+.signin input[type="radio"]
+{
+	border:none;
+	width:10%;
+	margin-left:10px;
+}
